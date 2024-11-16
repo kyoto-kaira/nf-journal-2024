@@ -1,49 +1,5 @@
-% \documentclass{jsbook}
-% \usepackage[dvipdfmx]{graphicx}                     % 画像表示
-% \usepackage{amsmath, amssymb, amsfonts, mathtools}  % 数式表示
-% \usepackage[dvipdfmx]{hyperref}                     % 参考文献リンク
-% \usepackage{subcaption}                             % 小さいキャプション
-% \usepackage{url}                                    % url表示
-% \usepackage{enumerate}                              % 箇条書き
-
-% \addtolength{\fullwidth}{-26truemm}  % 全体の幅(ヘッダ部の幅)を既定値から26mm小さくする
-% \setlength{\textwidth}{\fullwidth}   % 本文の幅(textwidth)を全体の幅(=ヘッダ部の幅)にそろえる
-% \setlength{\evensidemargin}{1truemm} % 偶数ページの左余白を1mm(+1インチ)にする
-% \setlength{\oddsidemargin}{19truemm} % 奇数ページの左余白を19mm(+1インチ)にする
-
-% % 式番号を(1.〇)で表示する
-% \numberwithin{equation}{section}
-
-% \title{京大シラバスRAGシステムの検索方法の実験}
-% \author{神原みちる}
-
-% \usepackage{listings,jvlisting}
-
-% \lstset{
-%   basicstyle={\ttfamily},
-%   identifierstyle={\small},
-%   commentstyle={\smallitshape},
-%   keywordstyle={\small\bfseries},
-%   ndkeywordstyle={\small},
-%   stringstyle={\small\ttfamily},
-%   frame={tb},
-%   breaklines=true,
-%   columns=[l]{fullflexible},
-%   numbers=left,
-%   xrightmargin=0zw,
-%   xleftmargin=3zw,
-%   numberstyle={\scriptsize},
-%   stepnumber=1,
-%   numbersep=1zw,
-%   lineskip=-0.5ex
-% }
-
-% \begin{document}
-% \maketitle
 \section{探索方法の基本情報と目的}
 今回は埋め込みベクトル用いる方法と、単語出現頻度を用いる手法 の２つの探索手法を実験した。
-
-
 
 \subsection{埋め込みベクトルによる方法}
 この手法は、文書を多次元のベクトル空間上のベクトルとして数値表現したデータを用いて、ベクトル間の距離や類似度によって文書を検索する。 \par
@@ -168,4 +124,3 @@ BM25は、情報検索において文書の関連性を評価する上で広く�
     \end{tabular}
     \caption{質問応答表の結果}
 \end{table}
-% \end{document}

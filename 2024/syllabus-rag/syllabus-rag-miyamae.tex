@@ -1,45 +1,3 @@
-% \documentclass{jsbook}
-% \usepackage[dvipdfmx]{graphicx}                     % 画像表示
-% \usepackage{amsmath, amssymb, amsfonts, mathtools}  % 数式表示
-% \usepackage[dvipdfmx]{hyperref}                     % 参考文献リンク
-% \usepackage{subcaption}                             % 小さいキャプション
-% \usepackage{url}                                    % url表示
-% \usepackage{enumerate}                              % 箇条書き
-
-% \addtolength{\fullwidth}{-26truemm}  % 全体の幅(ヘッダ部の幅)を既定値から26mm小さくする
-% \setlength{\textwidth}{\fullwidth}   % 本文の幅(textwidth)を全体の幅(=ヘッダ部の幅)にそろえる
-% \setlength{\evensidemargin}{1truemm} % 偶数ページの左余白を1mm(+1インチ)にする
-% \setlength{\oddsidemargin}{19truemm} % 奇数ページの左余白を19mm(+1インチ)にする
-
-% % 式番号を(1.〇)で表示する
-% \numberwithin{equation}{section}
-
-% \title{京大シラバスRAGシステムの絞り込み、データの前処理}
-% \author{宮前明生}
-
-% \usepackage{listings,jvlisting}
-
-% \lstset{
-%   basicstyle={\ttfamily},
-%   identifierstyle={\small},
-%   commentstyle={\smallitshape},
-%   keywordstyle={\small\bfseries},
-%   ndkeywordstyle={\small},
-%   stringstyle={\small\ttfamily},
-%   frame={tb},
-%   breaklines=true,
-%   columns=[l]{fullflexible},
-%   numbers=left,
-%   xrightmargin=0zw,
-%   xleftmargin=3zw,
-%   numberstyle={\scriptsize},
-%   stepnumber=1,
-%   numbersep=1zw,
-%   lineskip=-0.5ex
-% }
-
-% \begin{document}
-% \maketitle
 \section{京大シラバスRAGシステムの基本情報}
 \subsection{シラバスとRAGシステム}
 シラバスとは、京都大学情報教務システムKULASISが公開している京都大学の科目の情報が載っているページである。これは京都大学の学生・職員でなくとも閲覧することができる。シラバス検索というページから、知りたい科目の条件（学部、学科、曜時限等）で検索をして、各科目のページに飛ぶことができる。各科目のページには以下のような項目がある。括弧の中の項目は一部の科目にある。\\
@@ -249,4 +207,3 @@ for i in range(3,len(soup.find_all('a'))):
   \item 教科書、参考書の情報も検索に組み込む。
   \item シラバスの要約を外部データとして埋め込む。
 \end{itemize}
-% \end{document}
